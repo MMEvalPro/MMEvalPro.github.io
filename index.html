@@ -734,7 +734,7 @@
                 <a style="color:#94070A;font-weight:normal;">Haozhe Zhao</a>,
               </span> 
               <span class="author-block">
-                <a style="color:#94070A;font-weight:normal;">Zhihui Guo</a>,
+                <a style="color:#1d05a6;font-weight:normal;">Zhihui Guo</a>,
               </span> 
               <span class="author-block">
                 <a style="color:#94070A;font-weight:normal;">Yichi Zhang</a>,
@@ -749,7 +749,7 @@
                 <a style="color:#94070A;font-weight:normal;">Luchen Liu</a>,
               </span> <br>
               <span class="author-block">
-                <a style="color:#94070A;font-weight:normal;">Tianyu Liu</a>,
+                <a style="color:#df710a;font-weight:normal;">Tianyu Liu</a>,
               </span> 
               <span class="author-block">
                 <a style="color:#94070A;font-weight:normal;">Baobao Chang<sup>&dagger;</sup></a>,
@@ -764,7 +764,7 @@
 
             
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><b style="color:#94070A; font-weight:normal">▶ </b>Peking University</span>
+              <span class="author-block"><b style="color:#94070A; font-weight:normal">▶ </b>Peking University</span> <span class="author-block"><b style="color:#14c741; font-weight:normal">▶ </b>Chinese Academy of Medical Sciences</span> <span class="author-block"><b style="color:#1d05a6; font-weight:normal">▶ </b>CUHK</span> <span class="author-block"><b style="color:#df710a; font-weight:normal">▶ </b>Alibaba Group</span>
               <br>
               <!-- <span class="author-block">&nbsp;&nbsp;<sup>*</sup>Equal Contribution</span> -->
             </div>
@@ -774,7 +774,7 @@
 
             <div class="column has-text-centered">
               <div class="publication-links">
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/2403.00231" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <svg id="logomark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.732 24.269">
@@ -793,7 +793,7 @@
                     </span>
                     <span>arXiv</span>
                   </a>
-                </span>
+                </span> -->
                 <!-- <span class="link-block">
                   <a href="https://github.com/vlf-silkie/VLFeedback" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -803,7 +803,7 @@
                   </a>
                 </span> -->
                 <span class="link-block">
-                  <a href="https://huggingface.co/datasets/MMInstruction/ArxivCap" target="_blank"
+                  <a href="https://huggingface.co/datasets/MM-Diagnose/MMEvalPro" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <svg class="svg-inline--fa fa-database fa-w-14" aria-hidden="true" focusable="false"
@@ -814,11 +814,21 @@
                         </path>
                       </svg><!-- <i class="fas fa-database"></i> Font Awesome fontawesome.com -->
                     </span>
-                    <span>Dataset(ArxivCap)</span>
+                    <span>Dataset</span>
                   </a>
                 </span>
 
                 <span class="link-block">
+                  <a href="https://github.com/chenllliang/MMEvalPro" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- <span class="link-block">
                   <a href="https://huggingface.co/datasets/MMInstruction/ArxivQA" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -828,13 +838,13 @@
                         <path fill="currentColor"
                           d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z">
                         </path>
-                      </svg><!-- <i class="fas fa-database"></i> Font Awesome fontawesome.com -->
+                      </svg>
                     </span>
                     <span>Dataset(ArxivQA)</span>
                   </a>
-                </span>
+                </span> -->
 
-
+<!-- 
                 <span class="link-block">
                   <a href="https://huggingface.co/MMInstruction/Qwen-VL-ArXivQA" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -849,9 +859,9 @@
                     </span>
                     <span>Model(ArXivQA)</span>
                   </a>
-                </span>
+                </span> -->
 
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://huggingface.co/MMInstruction/Qwen-VL-ArXivCap" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -865,7 +875,7 @@
                     </span>
                     <span>Model(ArXivCap)</span>
                   </a>
-                </span>
+                </span> -->
 
 
                 <!-- <span class="link-block">
@@ -894,23 +904,17 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Large vision-language models (LVLMs), exemplified by GPT-4V, excel across diverse tasks involving concrete
-              images from natural scenes.
-              However, their ability to interpret abstract figures, such as geometry shapes and scientific plots,
-              remains limited due to a scarcity of training datasets in scientific domains.
-              To fill this gap, we introduce Multimodal ArXiv, consisting of ArXivCap and ArXivQA, for enhancing LVLMs
-              scientific comprehension.
-              ArXivCap is a figure-caption dataset comprising 6.4M images and 3.9M captions sourced from 572K ArXiv
-              papers spanning various scientific domains.
-              Drawing from ArXivCap, we introduce ArXivQA, a question-answering dataset generated by prompting GPT-4V
-              based on scientific figures.
-              ArXivQA greatly enhances LVLMs' mathematical reasoning capabilities, achieving a 10.4% absolute accuracy
-              gain on a multimodal mathematical reasoning benchmark.
-              Furthermore, employing ArXivCap, we devise four vision-to-text tasks for benchmarking LVLMs.
-              Evaluation results with state-of-the-art LVLMs underscore their struggle with the nuanced semantics of
-              academic figures, with domain-specific training yielding substantial performance gains.
-              Our error analysis uncovers misinterpretations of visual context, recognition errors, and the production
-              of overly simplified captions by current LVLMs, shedding light on future improvements.
+              Large Multimodal Models (LMMs) exhibit impressive cross-modal understanding and reasoning abilities, 
+              often assessed through multiple-choice questions (MCQs) that include an image, 
+              a question, and several options. 
+              However, many benchmarks used for such evaluations suffer from systematic biases. 
+              Remarkably, Large Language Models (LLMs) without any visual perception capabilities achieve non-trivial performance, 
+              undermining the credibility of these evaluations. To address this issue while maintaining the efficiency of MCQ evaluations, 
+              we propose MMEvalPro, a benchmark designed to avoid Type-I errors through a trilogy evaluation pipeline and more rigorous metrics. 
+              For each original question from existing benchmarks, human annotators augment it by creating one perception question and one knowledge anchor question through a meticulous annotation process. 
+              MMEvalPro comprises 2,068 question triplets, totaling 6,204 distinct questions. Two-thirds of these questions are manually labeled by human experts, 
+              while the rest are sourced from existing benchmarks (MMMU, ScienceQA, and MathVista). Compared with the existing benchmarks, our experiments with the latest LLMs and LMMs demonstrate that MMEvalPro is 
+              <b style="color:#db2629">more challenging</b> (the best LMM lags behind human performance by 31.73%, compared to an average gap of 8.03% in previous benchmarks) and <b style="color:#db2629">more trustworthy</b> (the best LLM trails the best LMM by 23.09%, whereas the gap for previous benchmarks is just 14.64%). Our in-depth analysis explains the reason for the large performance gap and justify the trustworthiness of evaluation, underscoring its significant potential for advancing future research.
             <p></p>
 
           </div>
@@ -924,7 +928,7 @@
   <section class="section">
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
-        <h2 class="title is-3"><img id="painting_icon" width="3%" src=""> Multimodal ArXiv
+        <h2 class="title is-3"><img id="painting_icon" width="3%" src=""> MMEval <span style="color: #9d32d7;">Pro</span>
         </h2>
       </div>
     </div>
@@ -934,18 +938,16 @@
         <div class="column is-full-width">
           <div class="content has-text-justified">
             <p>
-              Comparison with previous scientific figure datasets. Our ArXivCap is the largest captioning dataset and
-              our ArXivQA is the only QA dataset that covers a wide range of domains from real papers.
-            </p>
+              LLMs and LMMs' performance comparison between original multimodal benchmarks (MMMU, ScienceQA, MathVista) and MMEvalPro. Performance gap between LLM and LMM is much clearer in MMEvalPro.</p>
             <centering>
               <div style="text-align: center;">
-                <img id="teaser" width="80%" src="./LLaVA_files/figs/comparison.png">
+                <img id="teaser" width="100%" src="./LLaVA_files/figs/calibrate.png">
               </div>
             </centering>
 
             <br><br>
 
-            <p>
+            <!-- <p>
               Overview of our dataset curation process. Starting from the ArXiv paper source files, we ensure the paper
               quality by selecting papers according to publication records. Figure and caption pairs are extracted and
               then cleaned according to manually designed rules. ArXivQA is generated by prompting GPT-4V with a curated
@@ -955,7 +957,7 @@
               <div style="text-align: center;">
                 <img id="teaser" width="80%" src="./LLaVA_files/figs/pipeline.png">
               </div>
-            </centering>
+            </centering> -->
 
             
           </div>
@@ -963,7 +965,7 @@
       </div>
   </section>
 
-
+<!-- 
   <section class="section">
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
@@ -1021,7 +1023,6 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
         <h2 class="title is-3"><img id="painting_icon" width="5%" src=""> Evaluation</h2>
-        <!-- <h2 class="title is-3"><img id="painting_icon" width="3%" src="./LLaVA_files/silkie.png"> Silkie: A Better Aligned LVLM </h2> -->
       </div>
     </div>
     <div class="container is-max-desktop">
@@ -1171,7 +1172,7 @@
         }
   </code></pre>
     </div>
-  </section>
+  </section> -->
 
 
   <section class="section" id="Acknowledgement">
@@ -1186,12 +1187,12 @@
         <!-- We would thank <a href="https://runxinxu.github.io/aboutme/">Runxin Xu</a> for his great help on the project. -->
       </p>
 
-      <p>
-        <b>Usage and License Notices</b>: The data, code and checkpoint is intended and licensed for research use only.
+      <!-- <p> -->
+        <!-- <b>Usage and License Notices</b>: The data, code and checkpoint is intended and licensed for research use only.
         They are also restricted to uses that follow the license agreement of Qwen-VL and GPT-4. The dataset is CC BY NC
         4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of
-        research purposes.
-      </p>
+        research purposes. -->
+      <!-- </p> -->
     </div>
   </section>
 

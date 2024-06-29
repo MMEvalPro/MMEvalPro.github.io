@@ -493,6 +493,35 @@
     .fad.fa-inverse {
       color: #fff
     }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 1em;
+    }
+    th, td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+    thead th {
+        background-color: #5a5757;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    .highlight {
+        color: #ff0e05;
+        font-weight: bold;
+    }
+    .darker {
+        color: #333;
+    }
+    .divider-row td {
+        border-bottom: 2px solid #4a4a4a;
+    }
   </style>
   <link rel="stylesheet" href="./LLaVA_files/css">
   <link rel="stylesheet" href="./LLaVA_files/bulma.min.css">
@@ -946,6 +975,146 @@
             </centering>
             <br><br>
 
+            
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-six-fifths">
+                <h2 class="title is-3"><img id="painting_icon" width="3%" src=""> Leaderboard
+                </h2>
+              </div>
+            </div>
+              
+              <p>
+                <table>
+                  <thead>
+                      <tr>
+                          <th rowspan="2">Rank</th>
+                          <th rowspan="2">Model</th>
+                          <th rowspan="2">Open?</th>
+                          <th colspan="4">MMEvalPro</th>
+                      </tr>
+                      <tr>
+                          <th>Average</th>
+                          <th>MMMU</th>
+                          <th>ScienceQA</th>
+                          <th>MathVista</th>
+                      </tr>
+                      <tr>
+                          <th colspan="3"></th>
+                          <th colspan="4"><span class="highlight">Genuine Accuracy</span> / Average Accuracy</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="divider-row">
+                          <td class="darker">#</td>
+                          <td class="darker">Human (Graduate Student)</td>
+                          <td class="darker">-</td>
+                          <td class="darker">62.89% / 80.28%</td>
+                          <td class="darker">38.10% / 66.67%</td>
+                          <td class="darker">64.42% / 81.09%</td>
+                          <td class="darker">86.14% / 93.07%</td>
+                      </tr>
+                      <tr>
+                          <td class="darker">1</td>
+                          <td class="darker">Qwen-VL-Max</td>
+                          <td class="darker">No</td>
+                          <td class="darker"><b>31.16%</b> / <b>64.55%</b></td>
+                          <td class="darker">24.38% / 59.45%</td>
+                          <td class="darker">47.61% / 75.02%</td>
+                          <td class="darker"><b>21.48%</b> / <b>59.19%</b></td>
+                      </tr>
+                      <tr>
+                          <td class="darker">2</td>
+                          <td class="darker">GPT-4o</td>
+                          <td class="darker">No</td>
+                          <td class="darker">30.06% / 63.26%</td>
+                          <td class="darker"><b>25.08%</b> / <b>60.29%</b></td>
+                          <td class="darker"><b>49.68%</b> / <b>76.86%</b></td>
+                          <td class="darker">15.43% / 52.63%</td>
+                      </tr>
+                      <tr>
+                          <td class="darker">3</td>
+                          <td class="darker">InternVL-1.5-Chat-20B</td>
+                          <td class="darker">Yes</td>
+                          <td class="darker">28.52% / 63.22%</td>
+                          <td class="darker">19.34% / 55.63%</td>
+                          <td class="darker">45.49% / 76.25%</td>
+                          <td class="darker">20.74% / 57.78%</td>
+                      </tr>
+                      <tr>
+                          <td class="darker">4</td>
+                          <td class="darker">LLaVA-Next-Hermes-Yi-34B</td>
+                          <td class="darker">Yes</td>
+                          <td class="darker">28.47% / 62.48%</td>
+                          <td class="darker">23.60% / 59.34%</td>
+                          <td class="darker">43.67% / 73.35%</td>
+                          <td class="darker">18.15% / 54.75%</td>
+                      </tr>
+                      <tr>
+                          <td class="darker">5</td>
+                          <td class="darker">MiniCPM-V2.5-LLaMA3-8B</td>
+                          <td class="darker">Yes</td>
+                          <td class="darker">26.07% / 60.37%</td>
+                          <td class="darker">18.36% / 54.86%</td>
+                          <td class="darker">43.56% / 73.96%</td>
+                          <td class="darker">16.30% / 52.28%</td>
+                      </tr>
+                      <tr>
+                          <td class="darker">6</td>
+                          <td class="darker">GPT-4V-1106-preview</td>
+                          <td class="darker">No</td>
+                          <td class="darker">25.05% / 59.26%</td>
+                          <td class="darker">22.30% / 57.95%</td>
+                          <td class="darker">39.81% / 71.34%</td>
+                          <td class="darker">13.04% / 48.48%</td>
+                      </tr>
+                      <tr>
+                          <td class="darker">7</td>
+                          <td class="darker">LLaVA-Next-Vicuna-13B</td>
+                          <td class="darker">Yes</td>
+                          <td class="darker">17.62% / 50.67%</td>
+                          <td class="darker">12.13% / 47.86%</td>
+                          <td class="darker">31.65% / 64.88%</td>
+                          <td class="darker">9.07% / 39.26%</td>
+                      </tr>
+                      <tr>
+                          <td class="darker">8</td>
+                          <td class="darker">LLaVA-1.5-Vicuna-13B</td>
+                          <td class="darker">Yes</td>
+                          <td class="darker">15.32% / 47.82%</td>
+                          <td class="darker">10.82% / 43.28%</td>
+                          <td class="darker">29.94% / 63.20%</td>
+                          <td class="darker">5.19% / 36.98%</td>
+                      </tr>
+                      <tr>
+                          <td class="darker">9</td>
+                          <td class="darker">LLaVA-1.5-Vicuna-7B</td>
+                          <td class="darker">Yes</td>
+                          <td class="darker">13.87% / 46.16%</td>
+                          <td class="darker">11.15% / 43.06%</td>
+                          <td class="darker">25.64% / 58.33%</td>
+                          <td class="darker">4.81% / 37.10%</td>
+                      </tr>
+                      <tr>
+                          <td class="darker">#</td>
+                          <td class="darker">Random Guess</td>
+                          <td class="darker">-</td>
+                          <td class="darker">2.54% / 29.01%</td>
+                          <td class="darker">1.94% / 28.60%</td>
+                          <td class="darker">2.36% / 29.26%</td>
+                          <td class="darker">3.32% / 29.14%</td>
+                      </tr>
+                  </tbody>
+              </table>
+              </p>
+        
+              <!-- <p> -->
+                <!-- <b>Usage and License Notices</b>: The data, code and checkpoint is intended and licensed for research use only.
+                They are also restricted to uses that follow the license agreement of Qwen-VL and GPT-4. The dataset is CC BY NC
+                4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of
+                research purposes. -->
+              <!-- </p> -->
+            </div>
+
 
             <div class="columns is-centered has-text-centered">
               <div class="column is-six-fifths">
@@ -1041,6 +1210,9 @@
               <br><br>
               For more details, please refer to our paper, dataset and code, which are all available on the top of the page.
   </section>
+
+  
+  
 
 <!-- 
   <section class="section">
@@ -1244,6 +1416,8 @@
       div.grammarly-desktop-integration:before {
         content: attr(data-content);
       }
+
+      
     </style>
 
     <div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration"
